@@ -1,0 +1,98 @@
+/* Dodajte ove stilove u svoj CSS fajl */
+/* Stil za dropdown meni */
+.dropdown-menu {
+    display: none; /* Početno stanje - meni je sakriven */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #750404;
+    z-index: 1;
+    width: 100%;
+    border-top: 1px solid #ccc;
+  }
+  
+  /* Stil za prikazivanje dropdown menija kada je isMenuOpen true */
+  .layout-topbar a#landing-menu-button:hover + .dropdown-menu,
+  .dropdown-menu:hover {
+    display: block; /* Prikaz dropdown menija na hover iznad ikone ili menija */
+  }
+  
+  /* Stil za stavke menija u dropdown meniju */
+  .layout-profile-name a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .layout-profile-name a:hover {
+    background-color: #173042; /* Boja pozadine na hover-u */
+  }
+  
+
+/* Stil za meni kad je zatvoren */
+.layout-profile-name1 {
+     display: none;  
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+  }
+  
+  .layout-profile-name1.open {
+    display: block !important;
+    position: fixed; /* Postavite meni kao fiksni element */
+    right: 220px; /* Podešavanje odstojanja od desne ivice prozora */
+    /* top: 0; Postavite meni na vrh prozora */
+  }
+  
+  /* Stil za stavke menija */
+  .layout-profile-name li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .layout-profile-name a {
+    /* display: block; */
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .layout-profile-name a:hover {
+    background-color: #173042; /* Boja pozadine na hover-u */
+  }
+
+/* Stil za dugme menija */
+.mobile-menu-button {
+    display: none; /* Početno stanje - dugme je sakriveno */
+    cursor: pointer;
+    position: relative;
+    width: 30px; /* Prilagodite veličinu dugmeta po potrebi */
+    height: 30px;
+    margin-left: 10px; /* Prilagodite razmak između dugmeta i ikone menija po potrebi */
+  }
+  
+  /* Stil za prikazivanje dugmeta menija kada je isMenuOpen true */
+  #landing-menu-button:hover + .dropdown-menu,
+  .mobile-menu-button.open {
+    display: block; /* Prikaz dugmeta menija na hover iznad ikone ili menija, ili kada je isMenuOpen true */
+  }
+  
+  /* Stil za ikonu u dugmetu menija */
+  .mobile-menu-button img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Dodajte stil za animaciju ikone na klik */
+  .mobile-menu-button.clicked img {
+    transform: rotate(90deg); /* Rotacija ikone na 90 stepeni */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  
