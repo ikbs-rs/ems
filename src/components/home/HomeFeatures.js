@@ -124,6 +124,19 @@ function HomeFeatures() {
         <div className="col-12 lg:col-4">
           <a href={`${env.CMN_URL}?sl=${selectedLanguage}`}>
             <div className="feature-box">
+              <img src={`assets/layout/images/landing/java_1.png`} alt="roma" style={{ cursor: 'pointer' }} />
+              <div style={{ cursor: 'pointer' }}>
+                <h3>{translations[currentLanguage].cafeManagement}</h3>
+                <p>{translations[currentLanguage].cafeManagementDescription}</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        )}         
+        { usePermission('ADMentry') && (
+        <div className="col-12 lg:col-4">
+          <a href={`${env.CMN_URL}?sl=${selectedLanguage}`}>
+            <div className="feature-box">
               <img src={`assets/layout/images/landing/icon-sap@2x.png`} alt="roma" style={{ cursor: 'pointer' }} />
               <div style={{ cursor: 'pointer' }}>
                 <h3>{translations[currentLanguage].sapLibrary}</h3>

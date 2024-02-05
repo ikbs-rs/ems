@@ -100,6 +100,8 @@ export const translations = {
       riskAssessment: "Процена ризика",
       safetyProtectionWork: "Безбедност и заштита на раду",
       sapLibrary: "SAP библиотеке",
+      cafeManagement: "Кафе кухиња",
+      cafeManagementDescription: "Изаберите ову опцију да приступите администрацији кафе кухиња.",
     }
   };
   
