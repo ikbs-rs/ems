@@ -6,6 +6,7 @@ import { translations } from "../../configs/translations";
 //import queryString from "query-string"
 //import { useSelector } from 'react-redux';
 import { usePermission } from '../../security/interceptors';
+import './home.css';
 
 function HomeFeatures() {
   //const navigate = useNavigate();
@@ -122,7 +123,7 @@ function HomeFeatures() {
         )}    
         { usePermission('ADMentry') && (
         <div className="col-12 lg:col-4">
-          <a href={`${env.CMN_URL}?sl=${selectedLanguage}`}>
+          <a href={`${env.COFF_URL}?sl=${selectedLanguage}`}>
             <div className="feature-box">
               <img src={`assets/layout/images/landing/java_1.png`} alt="roma" style={{ cursor: 'pointer' }} />
               <div style={{ cursor: 'pointer' }}>
