@@ -97,7 +97,7 @@ function HomeFeatures() {
         )}
         { usePermission('ADMentry') && (
         <div className="col-12 lg:col-4">
-          <a href={`${env.CMN_URL}?sl=${selectedLanguage}`}>
+          <a href={`${env.BZR_URL}?sl=${selectedLanguage}`}>
             <div className="feature-box">
               <img src={`assets/layout/images/landing/icon-responsive@2x.png`} alt="roma" style={{ cursor: 'pointer' }} />
               <div style={{ cursor: 'pointer' }}>
@@ -146,7 +146,20 @@ function HomeFeatures() {
             </div>
           </a>
         </div>
-        )}                  
+        )}    
+        { usePermission('TICentry') && (
+        <div className="col-12 lg:col-4">
+          <a href={`${env.TIC_URL}?sl=${selectedLanguage}`}>
+            <div className="feature-box">
+              <img src={`assets/layout/images/landing/ticket_8436993.png`} alt="roma" style={{ cursor: 'pointer' }} />
+              <div style={{ cursor: 'pointer' }}>
+                <h3>{translations[currentLanguage].ticketlineSystem}</h3>
+                <p>{translations[currentLanguage].ticketlineSystemDescription}</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        )}                      
         <div className="col-12 lg:col-4">
           <a href="http://192.168.36.90/maximo/webclient/login/login.jsp?appservauth=true" target="_blank">
             <div className="feature-box">
