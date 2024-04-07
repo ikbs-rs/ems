@@ -38,7 +38,9 @@ const App =  () => {
         <div className="landing-body">
           <div className="landing-wrapper">
             <Header scrollToDiv={scrollToDiv} />
-            {usePermission('Modules', 'par1', 'par2') && <Modules />}
+            {usePermission('Modules', 'par1', 'par2') && 
+            <Modules />
+            }
             {/* <News />
             <News1 />              
             <Pricing /> */}

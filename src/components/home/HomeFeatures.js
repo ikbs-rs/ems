@@ -121,7 +121,7 @@ function HomeFeatures() {
           </a>
         </div>
         )}    
-        { usePermission('ADMentry') && (
+        { usePermission('COFFentry') && (
         <div className="col-12 lg:col-4">
           <a href={`${env.COFF_URL}?sl=${selectedLanguage}`}>
             <div className="feature-box">

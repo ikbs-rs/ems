@@ -58,7 +58,7 @@ const HomeHeader = ({ scrollToDiv }) => {
   }
 
   return (
-    <div id="home" className="landing-header">
+    <div id="home" className="landing-header"> 
       <div>
         <div className="landing-topbar" style={{ backgroundColor: "#750404" }}>  {/*  "#173042" */}
           <span>
