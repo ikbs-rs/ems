@@ -31,7 +31,7 @@ const HomeHeader = ({ scrollToDiv }) => {
   return (
     <div id="home" className="landing-header">
       <div>
-        <div className="landing-topbar" style={{ backgroundColor: "#750404" }}>  {/*  "#173042" */}
+        <div className="landing-topbar" > {/*style={{ backgroundColor: "#750404" }}>  {/*  "#173042" */}
           <span>
             {/* <img src={`assets/layout/images/logo-beli2.png`} alt="Ticket line" style={{ width: "124.7px", height: "37px" }}/> */}
             <img src={`assets/layout/images/logo-beli2.png`} alt="Ticket line" style={{ height: "50px" }} />

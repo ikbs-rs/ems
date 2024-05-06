@@ -103,25 +103,25 @@ export const Login = () => {
             <div className="card login-panel p-fluid">
                 <div className="login-panel-content">
                     <div className="grid">
-                        <div className="col-12 sm:col-6 md:col-6 logo-container">
+                        <div className="col-12 sm:col-8 md:col-8 logo-container">
                             {/* <img src="start/assets/layout/images/logo-tl.png" alt="Ticketline" style={{ width: "155.88px", height: "46.25px" }}/> */}
                             <img src="assets/layout/images/logo-tl.png" alt="Ticketline" style={{ height: "150px" }}/>
-                            <span className="guest-sign-in">Welcome, please use the form to sign-in EMS network</span>
+                            <span className="guest-sign-in">Добродошли, користите формулар за пријаву на ЕМС мрежу</span>
                         </div>
                         <div className="col-12 username-container">
-                            <label>Username</label>
+                            <label>Корисник</label>
                             <div className="login-input">
                                 <InputText id="input" type="text" />
                             </div>
                         </div>
                         <div className="col-12 password-container">
-                            <label>Password</label>
+                            <label>Лозинка</label>
                             <div className="login-input">
                                 <InputText id="password-input" type="password" />
                             </div>
                         </div>
                         <div className="col-12 language-container">
-                            <label>Language</label>
+                            <label>Језик</label>
                             <div className="login-input">
                                 <select id="language-input" onChange={(e) => onInputChange(e, 'language-input')} defaultValue={sl || "en"}>
                                     <option value="en">English</option>
@@ -135,7 +135,7 @@ export const Login = () => {
                         </div>                        
                         <div className="col-12 sm:col-6 md:col-6 rememberme-container">
                             <Checkbox checked={checked} onChange={(e) => setChecked(e.checked)} />
-                            <label> Remember me</label>
+                            <label> Запамти ме</label>
                         </div>
 
                         {/* <div className="col-12 sm:col-6 md:col-6 forgetpassword-container">
@@ -145,7 +145,7 @@ export const Login = () => {
                         </div> */}
 
                         <div className="col-12 sm:col-6 md:col-6">
-                            <Button label="Sign In" icon="pi pi-check" onClick={() => handleButtonClick('app')}/>
+                            <Button label="Пријавите се" icon="pi pi-check" onClick={() => handleButtonClick('app')}/>
                         </div>
                     </div>
                 </div>

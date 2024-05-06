@@ -1,0 +1,50 @@
+.landing-body .landing-wrapper .landing-header .landing-topbar ul li a {
+    color: #fff;
+}
+
+.landing-body .landing-wrapper .landing-header .landing-topbar {
+
+    background-color: #27275e67;
+}
+
+.landing-body {
+    background: url("../public/assets/layout/images/landing/landing-header@2xA.png");
+    background-size: cover;
+  }
+
+  .landing-body .landing-wrapper .landing-header {
+    background: none;
+  }
+
+  .landing-body .landing-wrapper .landing-features {
+    border-top: 8px solid #453c3c4a;
+    background-color: #0b0b5099;
+  }
+  .landing-body .landing-wrapper .landing-features .features-topic-shadow {
+    background-color: #453c3c54;
+  }
+
+  .landing-body .landing-wrapper .landing-features .feature-box > div h3 {
+    color: #e9ecef;
+  }
+
+  .landing-body .landing-wrapper .landing-features .feature-box > div p {
+    color: #e9ecef;
+}
+
+.login-body {
+    background: url("../public/assets/layout/images/landing/landing-header@2xOld.jpg") no-repeat;
+    background-size: cover;
+  }
+
+  .login-body .login-panel {
+    background-color: rgba(30, 36, 122, 0.327); 
+  }
+
+  .login-body .login-panel .guest-sign-in {
+    color: #e9ecef;
+  }
+
+  .login-body .login-panel label {
+    color:#e9ecef;
+  }
