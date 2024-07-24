@@ -57,6 +57,11 @@ const HomeHeader = ({ scrollToDiv }) => {
     navigate('/login');
   }
 
+
+  const openNewWindow = () => {
+    window.open("https://www.ems.rs", "_blank");
+  }
+
   return (
     <div id="home" className="landing-header"> 
       <div>
@@ -119,6 +124,7 @@ const HomeHeader = ({ scrollToDiv }) => {
         <Button
           label={translations[selLen].learnMore}
           className="p-button-text-only p-widget p-state-default p-corner-all"
+          onClick={openNewWindow}
         />
       </div>
     </div>
